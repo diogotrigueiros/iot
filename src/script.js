@@ -4,7 +4,9 @@ const disarmBtn = document.getElementById("disarm-btn");
 const alarmStatus = document.getElementById("alarm-status");
 const logList = document.getElementById("log-list");
 
-armBtn.addEventListener("click", () => {
+armBtn.addEventListener("click", async () => {
+
+    await fetch("../api/arm.php");
 
     alarmStatus.textContent = "ARMADO";
 
@@ -12,9 +14,11 @@ armBtn.addEventListener("click", () => {
 
 });
 
-disarmBtn.addEventListener("click", () => {
+disarmBtn.addEventListener("click", async () => {
 
-    alarmStatus.textContent = "DESARAMADO";
+    await fetch("../api/disarm.php");
+
+    alarmStatus.textContent = "DESARMADO";
 
     addLog("Alarme desarmado");
 
