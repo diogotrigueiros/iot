@@ -6,7 +6,7 @@ const logList = document.getElementById("log-list");
 
 armBtn.addEventListener("click", async () => {
 
-    await fetch("../api/arm.php");
+    await fetch("/api/arm.php");
 
     alarmStatus.textContent = "ARMADO";
 
@@ -16,7 +16,7 @@ armBtn.addEventListener("click", async () => {
 
 disarmBtn.addEventListener("click", async () => {
 
-    await fetch("../api/disarm.php");
+    await fetch("/api/disarm.php");
 
     alarmStatus.textContent = "DESARMADO";
 
