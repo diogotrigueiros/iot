@@ -86,3 +86,13 @@ button {
 .logs li {
     margin-bottom: 10px;
 }
+
+#light-on-btn {
+    background: gold;
+    color: black;
+}
+
+#light-off-btn {
+    background: #444;
+    color: white;
+}

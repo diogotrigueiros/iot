@@ -44,6 +44,18 @@
 
         </div>
 
+	<div class="buttons">
+
+    	    <button id="light-on-btn">
+                💡 Light ON
+    	    </button>
+
+    	    <button id="light-off-btn">
+                🌑 Light OFF
+    	    </button>
+
+        </div>
+
         <div class="logs">
             <h2>📜 Logs</h2>
 
